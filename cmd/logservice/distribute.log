@@ -1,0 +1,2073 @@
+go : 2024/05/26 14:55:08 test distribute log
+[go] - 2024/06/04 21:20:58 [GradingService] - http: panic serving [::1]:8316: runtime error: invalid memory address or nil pointer dereference
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0000b6000}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0000b6000}, 0xc0000a6000)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0000b6000}, 0xc0000a6000)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000086270?}, {0xc9a340?, 0xc0000b6000?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00013c870, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:20:58 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:21:04 [GradingService] - http: panic serving [::1]:8320: runtime error: invalid memory address or nil pointer dereference
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0001600e0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0001600e0}, 0xc000134500)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0001600e0}, 0xc000134500)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000140930?}, {0xc9a340?, 0xc0001600e0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001be000, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:21:04 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:21:05 [GradingService] - http: panic serving [::1]:8321: runtime error: invalid memory address or nil pointer dereference
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0001601c0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0001601c0}, 0xc000134800)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0001601c0}, 0xc000134800)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000140b40?}, {0xc9a340?, 0xc0001601c0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00009e360, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:21:05 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:21:06 [GradingService] - http: panic serving [::1]:8324: runtime error: invalid memory address or nil pointer dereference
+goroutine 16 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0000b60e0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0000b60e0}, 0xc0000a6400)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0000b60e0}, 0xc0000a6400)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000086750?}, {0xc9a340?, 0xc0000b60e0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00013ccf0, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:21:06 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:21:06 [GradingService] - http: panic serving [::1]:8325: runtime error: invalid memory address or nil pointer dereference
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0001602a0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0001602a0}, 0xc000134b00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0001602a0}, 0xc000134b00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000140db0?}, {0xc9a340?, 0xc0001602a0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00009e630, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:21:06 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:21:07 [GradingService] - http: panic serving [::1]:8326: runtime error: invalid memory address or nil pointer dereference
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0000b61c0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0000b61c0}, 0xc0000a6700)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0000b61c0}, 0xc0000a6700)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000869f0?}, {0xc9a340?, 0xc0000b61c0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00013cf30, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:21:07 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:21:07 [GradingService] - http: panic serving [::1]:8327: runtime error: invalid memory address or nil pointer dereference
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0001d2000}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0001d2000}, 0xc0001ce000)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0001d2000}, 0xc0001ce000)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000190420?}, {0xc9a340?, 0xc0001d2000?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00009e870, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:21:07 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:21:07 [GradingService] - http: panic serving [::1]:8328: runtime error: invalid memory address or nil pointer dereference
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0001d20e0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0001d20e0}, 0xc0001ce300)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0001d20e0}, 0xc0001ce300)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0001906c0?}, {0xc9a340?, 0xc0001d20e0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001be3f0, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:21:07 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:21:08 [GradingService] - http: panic serving [::1]:8329: runtime error: invalid memory address or nil pointer dereference
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0000b62a0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0000b62a0}, 0xc0000a6a00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0000b62a0}, 0xc0000a6a00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000086cc0?}, {0xc9a340?, 0xc0000b62a0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001be630, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:21:08 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:21:08 [GradingService] - http: panic serving [::1]:8330: runtime error: invalid memory address or nil pointer dereference
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc000160380}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc000160380}, 0xc000134e00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc000160380}, 0xc000134e00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000141170?}, {0xc9a340?, 0xc000160380?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00013d050, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:21:08 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:21:08 [GradingService] - http: panic serving [::1]:8331: runtime error: invalid memory address or nil pointer dereference
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc000160460}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc000160460}, 0xc000135100)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc000160460}, 0xc000135100)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000141380?}, {0xc9a340?, 0xc000160460?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001be7e0, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:21:08 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:22:50 [GradingService] - http: panic serving [::1]:8375: runtime error: invalid memory address or nil pointer dereference
+goroutine 46 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc000160540}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc000160540}, 0xc000135400)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc000160540}, 0xc000135400)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000141590?}, {0xc9a340?, 0xc000160540?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00009eb40, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:22:50 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:22:53 [GradingService] - http: panic serving [::1]:8378: runtime error: invalid memory address or nil pointer dereference
+goroutine 61 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0001d21c0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0001d21c0}, 0xc0001ce600)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0001d21c0}, 0xc0001ce600)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000190b70?}, {0xc9a340?, 0xc0001d21c0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00013d680, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:22:53 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:22:54 [GradingService] - http: panic serving [::1]:8379: runtime error: invalid memory address or nil pointer dereference
+goroutine 67 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0000b6380}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0000b6380}, 0xc0000a6d00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0000b6380}, 0xc0000a6d00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000086ff0?}, {0xc9a340?, 0xc0000b6380?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001beab0, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:22:54 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:22:54 [GradingService] - http: panic serving [::1]:8380: runtime error: invalid memory address or nil pointer dereference
+goroutine 48 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc000160620}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc000160620}, 0xc000135700)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc000160620}, 0xc000135700)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000141950?}, {0xc9a340?, 0xc000160620?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00009eea0, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:22:54 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:22:54 [GradingService] - http: panic serving [::1]:8381: runtime error: invalid memory address or nil pointer dereference
+goroutine 63 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0000b6460}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0000b6460}, 0xc0000a7000)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0000b6460}, 0xc0000a7000)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000087260?}, {0xc9a340?, 0xc0000b6460?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00013d8c0, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:22:54 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:22:54 [GradingService] - http: panic serving [::1]:8382: runtime error: invalid memory address or nil pointer dereference
+goroutine 82 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0001d22a0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0001d22a0}, 0xc0001ce900)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0001d22a0}, 0xc0001ce900)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000190ea0?}, {0xc9a340?, 0xc0001d22a0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00009f0e0, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:22:54 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:22:56 [GradingService] - http: panic serving [::1]:8383: runtime error: invalid memory address or nil pointer dereference
+goroutine 69 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0000b6540}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0000b6540}, 0xc0000a7300)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0000b6540}, 0xc0000a7300)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000874d0?}, {0xc9a340?, 0xc0000b6540?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001bee10, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:22:56 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:22:58 [GradingService] - http: panic serving [::1]:8384: runtime error: invalid memory address or nil pointer dereference
+goroutine 70 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0000b6620}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0000b6620}, 0xc0000a7600)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0000b6620}, 0xc0000a7600)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000876e0?}, {0xc9a340?, 0xc0000b6620?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001bef30, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:22:58 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:22:58 [GradingService] - http: panic serving [::1]:8385: runtime error: invalid memory address or nil pointer dereference
+goroutine 85 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0000b6700}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0000b6700}, 0xc0000a7900)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0000b6700}, 0xc0000a7900)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000087950?}, {0xc9a340?, 0xc0000b6700?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00009f4d0, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:22:58 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:22:58 [GradingService] - http: panic serving [::1]:8386: runtime error: invalid memory address or nil pointer dereference
+goroutine 71 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0001d2380}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0001d2380}, 0xc0001cec00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0001d2380}, 0xc0001cec00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000191290?}, {0xc9a340?, 0xc0001d2380?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001bf050, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:22:58 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:22:59 [GradingService] - http: panic serving [::1]:8387: runtime error: invalid memory address or nil pointer dereference
+goroutine 64 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0001d2460}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0001d2460}, 0xc0001cef00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0001d2460}, 0xc0001cef00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0001914a0?}, {0xc9a340?, 0xc0001d2460?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00013db90, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:22:59 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:22:59 [GradingService] - http: panic serving [::1]:8388: runtime error: invalid memory address or nil pointer dereference
+goroutine 65 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0001d2540}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0001d2540}, 0xc0001cf200)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0001d2540}, 0xc0001cf200)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0001916b0?}, {0xc9a340?, 0xc0001d2540?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00013dcb0, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:22:59 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 21:57:12 [GradingService] - http: panic serving [::1]:9067: runtime error: invalid memory address or nil pointer dereference
+goroutine 98 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0001d2620}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0001d2620}, 0xc0001cf500)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0001d2620}, 0xc0001cf500)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0001918c0?}, {0xc9a340?, 0xc0001d2620?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00013dd40, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 21:57:12 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:09:28 [GradingService] - http: panic serving [::1]:9287: runtime error: invalid memory address or nil pointer dereference
+goroutine 88 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0001d2700}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0001d2700}, 0xc0001cf800)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0001d2700}, 0xc0001cf800)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000191ce0?}, {0xc9a340?, 0xc0001d2700?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00009f7a0, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:09:28 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:09:30 [GradingService] - http: panic serving [::1]:9290: runtime error: invalid memory address or nil pointer dereference
+goroutine 124 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc000160700}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc000160700}, 0xc000135a00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc000160700}, 0xc000135a00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000141f20?}, {0xc9a340?, 0xc000160700?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001bfa70, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:09:30 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:09:30 [GradingService] - http: panic serving [::1]:9291: runtime error: invalid memory address or nil pointer dereference
+goroutine 125 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0001607e0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0001607e0}, 0xc000135d00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0001607e0}, 0xc000135d00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0002b0150?}, {0xc9a340?, 0xc0001607e0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001bfb90, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:09:30 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:09:30 [GradingService] - http: panic serving [::1]:9292: runtime error: invalid memory address or nil pointer dereference
+goroutine 101 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0001d27e0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0001d27e0}, 0xc0001cfb00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0001d27e0}, 0xc0001cfb00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00037c240?}, {0xc9a340?, 0xc0001d27e0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0002c2240, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:09:30 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:19:21 [GradingService] - http: panic serving [::1]:9606: runtime error: invalid memory address or nil pointer dereference
+goroutine 89 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0000b67e0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0000b67e0}, 0xc0000a7c00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0000b67e0}, 0xc0000a7c00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000087da0?}, {0xc9a340?, 0xc0000b67e0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00009f950, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:19:21 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:19:24 [GradingService] - http: panic serving [::1]:9609: runtime error: invalid memory address or nil pointer dereference
+goroutine 128 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0001d28c0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0001d28c0}, 0xc0001cfe00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0001d28c0}, 0xc0001cfe00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00037c510?}, {0xc9a340?, 0xc0001d28c0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001bfe60, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:19:24 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:19:24 [GradingService] - http: panic serving [::1]:9610: runtime error: invalid memory address or nil pointer dereference
+goroutine 130 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0001608c0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0001608c0}, 0xc0002d8000)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0001608c0}, 0xc0002d8000)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0002b0420?}, {0xc9a340?, 0xc0001608c0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0003d2120, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:19:24 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:19:24 [GradingService] - http: panic serving [::1]:9611: runtime error: invalid memory address or nil pointer dereference
+goroutine 103 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0000b68c0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0000b68c0}, 0xc0000a7f00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0000b68c0}, 0xc0000a7f00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000fe2a0?}, {0xc9a340?, 0xc0000b68c0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0002c2510, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:19:24 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:19:25 [GradingService] - http: panic serving [::1]:9612: runtime error: invalid memory address or nil pointer dereference
+goroutine 147 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0001609a0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0001609a0}, 0xc0002d8300)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0001609a0}, 0xc0002d8300)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0002b06f0?}, {0xc9a340?, 0xc0001609a0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00009fef0, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:19:25 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:19:25 [GradingService] - http: panic serving [::1]:9613: runtime error: invalid memory address or nil pointer dereference
+goroutine 148 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0000b69a0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0000b69a0}, 0xc000428200)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0000b69a0}, 0xc000428200)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000fe5d0?}, {0xc9a340?, 0xc0000b69a0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00042c090, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:19:25 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:19:25 [GradingService] - http: panic serving [::1]:9614: runtime error: invalid memory address or nil pointer dereference
+goroutine 150 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc000160a80}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc000160a80}, 0xc0002d8600)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc000160a80}, 0xc0002d8600)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0002b0900?}, {0xc9a340?, 0xc000160a80?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00042c2d0, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:19:25 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:20:00 [PortalService] - http: Server closed
+
+[go] - 2024/06/04 22:20:20 [GradingService] - http: panic serving [::1]:9630: runtime error: invalid memory address or nil pointer dereference
+goroutine 153 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc000160000}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc000160000}, 0xc0002d8000)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc000160000}, 0xc0002d8000)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000fe030?}, {0xc9a340?, 0xc000160000?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00042c000, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:20:20 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:20:22 [GradingService] - http: panic serving [::1]:9632: runtime error: invalid memory address or nil pointer dereference
+goroutine 137 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc00044c000}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc00044c000}, 0xc000134200)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc00044c000}, 0xc000134200)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00037c120?}, {0xc9a340?, 0xc00044c000?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00013c1b0, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:20:22 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:21:27 [GradingService] - http: panic serving [::1]:9662: runtime error: invalid memory address or nil pointer dereference
+goroutine 155 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0002fc000}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0002fc000}, 0xc0000a6000)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0002fc000}, 0xc0000a6000)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000233e0?}, {0xc9a340?, 0xc0002fc000?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00042c360, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:21:27 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:21:29 [GradingService] - http: panic serving [::1]:9664: runtime error: invalid memory address or nil pointer dereference
+goroutine 108 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0000e2000}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0000e2000}, 0xc000134200)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0000e2000}, 0xc000134200)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00037c090?}, {0xc9a340?, 0xc0000e2000?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00042c120, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:21:29 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:21:34 [GradingService] - http: panic serving [::1]:9665: runtime error: invalid memory address or nil pointer dereference
+goroutine 109 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0000e20e0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0000e20e0}, 0xc000134500)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0000e20e0}, 0xc000134500)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00037c3f0?}, {0xc9a340?, 0xc0000e20e0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00042c240, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:21:34 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:21:35 [GradingService] - http: panic serving [::1]:9666: runtime error: invalid memory address or nil pointer dereference
+goroutine 164 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0002fc0e0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0002fc0e0}, 0xc0000a6400)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0002fc0e0}, 0xc0000a6400)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000fe180?}, {0xc9a340?, 0xc0002fc0e0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00013c510, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:21:35 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:21:35 [GradingService] - http: panic serving [::1]:9667: runtime error: invalid memory address or nil pointer dereference
+goroutine 156 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0002fc1c0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0002fc1c0}, 0xc0000a6700)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0002fc1c0}, 0xc0000a6700)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000fe390?}, {0xc9a340?, 0xc0002fc1c0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000100120, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:21:35 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:21:36 [GradingService] - http: panic serving [::1]:9668: runtime error: invalid memory address or nil pointer dereference
+goroutine 165 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0002fc2a0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0002fc2a0}, 0xc0000a6a00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0002fc2a0}, 0xc0000a6a00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000fe5a0?}, {0xc9a340?, 0xc0002fc2a0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00013c630, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:21:36 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:21:36 [GradingService] - http: panic serving [::1]:9669: runtime error: invalid memory address or nil pointer dereference
+goroutine 166 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0002fc380}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0002fc380}, 0xc0000a6d00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0002fc380}, 0xc0000a6d00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000fe7b0?}, {0xc9a340?, 0xc0002fc380?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00013c6c0, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:21:36 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:21:36 [GradingService] - http: panic serving [::1]:9670: runtime error: invalid memory address or nil pointer dereference
+goroutine 178 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0002fc460}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0002fc460}, 0xc0000a7000)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0002fc460}, 0xc0000a7000)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000fea20?}, {0xc9a340?, 0xc0002fc460?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00042cab0, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:21:36 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:21:36 [GradingService] - http: panic serving [::1]:9671: runtime error: invalid memory address or nil pointer dereference
+goroutine 157 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0002fc540}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0002fc540}, 0xc0000a7300)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0002fc540}, 0xc0000a7300)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000fec30?}, {0xc9a340?, 0xc0002fc540?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001002d0, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:21:36 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:21:37 [GradingService] - http: panic serving [::1]:9672: runtime error: invalid memory address or nil pointer dereference
+goroutine 167 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0002fc620}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0002fc620}, 0xc0000a7600)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0002fc620}, 0xc0000a7600)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000fee40?}, {0xc9a340?, 0xc0002fc620?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00013c870, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:21:37 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:21:37 [GradingService] - http: panic serving [::1]:9673: runtime error: invalid memory address or nil pointer dereference
+goroutine 158 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc000154000}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc000154000}, 0xc000142000)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc000154000}, 0xc000142000)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0001904b0?}, {0xc9a340?, 0xc000154000?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000100480, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:21:37 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:21:37 [GradingService] - http: panic serving [::1]:9674: runtime error: invalid memory address or nil pointer dereference
+goroutine 160 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0000e21c0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0000e21c0}, 0xc000134800)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0000e21c0}, 0xc000134800)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc00037c930?}, {0xc9a340?, 0xc0000e21c0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001006c0, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:21:37 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:21:38 [GradingService] - http: panic serving [::1]:9675: runtime error: invalid memory address or nil pointer dereference
+goroutine 169 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0002fc700}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0002fc700}, 0xc0000a7900)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0002fc700}, 0xc0000a7900)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000ff050?}, {0xc9a340?, 0xc0002fc700?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00013cb40, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:21:38 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:21:38 [GradingService] - http: panic serving [::1]:9676: runtime error: invalid memory address or nil pointer dereference
+goroutine 170 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xbbecc0?, 0xe690b0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xc9a340, 0xc0002fc7e0}, 0xc11998?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xc9a340, 0xc0002fc7e0}, 0xc0000a7c00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xecd7c0?, {0xc9a340, 0xc0002fc7e0}, 0xc0000a7c00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000ff260?}, {0xc9a340?, 0xc0002fc7e0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00013cc60, {0xc9a858, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/04 22:21:38 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:22:26 [GradingService] - Delete "http://localhost:3000/services": dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it.
+
+[go] - 2024/06/04 22:22:26 [GradingService] - http: Server closed
+
+[go] - 2024/06/04 22:23:42 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:23:43 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:27:27 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:27:30 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:27:32 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:27:32 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:27:47 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:27:49 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:27:49 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/04 22:27:49 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:27:20 [GradingService] - http: panic serving [::1]:8194: runtime error: invalid memory address or nil pointer dereference
+goroutine 15 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0001c8000}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0001c8000}, 0xc0001ba000)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0001c8000}, 0xc0001ba000)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0001900f0?}, {0xf298e0?, 0xc0001c8000?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001283f0, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:27:20 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:27:22 [GradingService] - http: panic serving [::1]:8199: runtime error: invalid memory address or nil pointer dereference
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0002a80e0}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0002a80e0}, 0xc000290100)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0002a80e0}, 0xc000290100)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000282570?}, {0xf298e0?, 0xc0002a80e0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001ae2d0, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:27:22 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:27:23 [GradingService] - http: panic serving [::1]:8202: runtime error: invalid memory address or nil pointer dereference
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0001c80e0}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0001c80e0}, 0xc0001ba400)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0001c80e0}, 0xc0001ba400)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0001905d0?}, {0xf298e0?, 0xc0001c80e0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000294630, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:27:23 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:27:24 [GradingService] - http: panic serving [::1]:8203: runtime error: invalid memory address or nil pointer dereference
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0002a81c0}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0002a81c0}, 0xc000290400)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0002a81c0}, 0xc000290400)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0002828a0?}, {0xf298e0?, 0xc0002a81c0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001ae510, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:27:24 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:27:24 [GradingService] - http: panic serving [::1]:8204: runtime error: invalid memory address or nil pointer dereference
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0002a82a0}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0002a82a0}, 0xc000290700)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0002a82a0}, 0xc000290700)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000282ab0?}, {0xf298e0?, 0xc0002a82a0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001ae630, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:27:24 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:27:24 [GradingService] - http: panic serving [::1]:8205: runtime error: invalid memory address or nil pointer dereference
+goroutine 16 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0002a8380}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0002a8380}, 0xc000290a00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0002a8380}, 0xc000290a00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000282cc0?}, {0xf298e0?, 0xc0002a8380?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000128630, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:27:24 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:29:33 [GradingService] - http: panic serving [::1]:8309: runtime error: invalid memory address or nil pointer dereference
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0001c81c0}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0001c81c0}, 0xc0001ba700)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0001c81c0}, 0xc0001ba700)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0001909c0?}, {0xf298e0?, 0xc0001c81c0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001ae6c0, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:29:33 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:29:34 [GradingService] - http: panic serving [::1]:8312: runtime error: invalid memory address or nil pointer dereference
+goroutine 58 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0002a8460}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0002a8460}, 0xc000290d00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0002a8460}, 0xc000290d00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000282f30?}, {0xf298e0?, 0xc0002a8460?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001ae990, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:29:34 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:29:35 [GradingService] - http: panic serving [::1]:8313: runtime error: invalid memory address or nil pointer dereference
+goroutine 41 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0001c82a0}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0001c82a0}, 0xc0001baa00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0001c82a0}, 0xc0001baa00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000190e40?}, {0xf298e0?, 0xc0001c82a0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000294ea0, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:29:35 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:29:35 [GradingService] - http: panic serving [::1]:8314: runtime error: invalid memory address or nil pointer dereference
+goroutine 66 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0001c8380}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0001c8380}, 0xc0001bad00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0001c8380}, 0xc0001bad00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000191050?}, {0xf298e0?, 0xc0001c8380?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000128870, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:29:35 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:29:35 [GradingService] - http: panic serving [::1]:8315: runtime error: invalid memory address or nil pointer dereference
+goroutine 61 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc00015a000}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc00015a000}, 0xc00012a200)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc00015a000}, 0xc00012a200)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000023530?}, {0xf298e0?, 0xc00015a000?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001aed80, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:29:35 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:29:35 [GradingService] - http: panic serving [::1]:8316: runtime error: invalid memory address or nil pointer dereference
+goroutine 68 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0001c8460}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0001c8460}, 0xc0001bb000)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0001c8460}, 0xc0001bb000)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0001912c0?}, {0xf298e0?, 0xc0001c8460?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000128ab0, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:29:35 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:29:35 [GradingService] - http: panic serving [::1]:8317: runtime error: invalid memory address or nil pointer dereference
+goroutine 69 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0001c8540}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0001c8540}, 0xc0001bb300)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0001c8540}, 0xc0001bb300)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0001914d0?}, {0xf298e0?, 0xc0001c8540?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000128bd0, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:29:35 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:29:35 [GradingService] - http: panic serving [::1]:8318: runtime error: invalid memory address or nil pointer dereference
+goroutine 64 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0002a8540}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0002a8540}, 0xc000291000)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0002a8540}, 0xc000291000)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0002832c0?}, {0xf298e0?, 0xc0002a8540?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001af170, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:29:35 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:29:35 [GradingService] - http: panic serving [::1]:8319: runtime error: invalid memory address or nil pointer dereference
+goroutine 43 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0001c8620}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0001c8620}, 0xc0001bb600)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0001c8620}, 0xc0001bb600)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000191740?}, {0xf298e0?, 0xc0001c8620?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000295290, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:29:35 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:29:36 [GradingService] - http: panic serving [::1]:8322: runtime error: invalid memory address or nil pointer dereference
+goroutine 82 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc00015a0e0}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc00015a0e0}, 0xc00012a500)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc00015a0e0}, 0xc00012a500)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000239b0?}, {0xf298e0?, 0xc00015a0e0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001af3b0, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:29:36 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:29:36 [GradingService] - http: panic serving [::1]:8323: runtime error: invalid memory address or nil pointer dereference
+goroutine 71 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc00015a1c0}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc00015a1c0}, 0xc00012a800)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc00015a1c0}, 0xc00012a800)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000023c20?}, {0xf298e0?, 0xc00015a1c0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000128f30, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:29:36 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:29:36 [GradingService] - http: panic serving [::1]:8324: runtime error: invalid memory address or nil pointer dereference
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc00015a2a0}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc00015a2a0}, 0xc00012ab00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc00015a2a0}, 0xc00012ab00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000023e30?}, {0xf298e0?, 0xc00015a2a0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000295440, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:29:36 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:29:36 [GradingService] - http: panic serving [::1]:8325: runtime error: invalid memory address or nil pointer dereference
+goroutine 74 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0002a8620}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0002a8620}, 0xc000291300)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0002a8620}, 0xc000291300)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000283710?}, {0xf298e0?, 0xc0002a8620?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000129320, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:29:36 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:29:36 [GradingService] - http: panic serving [::1]:8326: runtime error: invalid memory address or nil pointer dereference
+goroutine 46 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc00015a380}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc00015a380}, 0xc00012ae00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc00015a380}, 0xc00012ae00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0004300c0?}, {0xf298e0?, 0xc00015a380?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000295710, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:29:36 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:29:36 [GradingService] - http: panic serving [::1]:8327: runtime error: invalid memory address or nil pointer dereference
+goroutine 76 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0001c8700}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0001c8700}, 0xc0001bb900)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0001c8700}, 0xc0001bb900)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000191a70?}, {0xf298e0?, 0xc0001c8700?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000129560, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:29:36 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:29:37 [GradingService] - http: panic serving [::1]:8328: runtime error: invalid memory address or nil pointer dereference
+goroutine 77 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0001c87e0}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0001c87e0}, 0xc0001bbc00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0001c87e0}, 0xc0001bbc00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000191c80?}, {0xf298e0?, 0xc0001c87e0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000129680, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:29:37 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:30:18 [GradingService] - http: panic serving [::1]:8365: runtime error: invalid memory address or nil pointer dereference
+goroutine 85 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc00015a460}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc00015a460}, 0xc00012b100)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc00015a460}, 0xc00012b100)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0004303f0?}, {0xf298e0?, 0xc00015a460?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001af8c0, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:30:18 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:31:38 [PortalService] - http: Server closed
+
+[go] - 2024/06/05 17:31:46 [GradingService] - http: panic serving [::1]:8418: runtime error: invalid memory address or nil pointer dereference
+goroutine 79 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0001c88c0}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0001c88c0}, 0xc0001bbf00)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0001c88c0}, 0xc0001bbf00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000191f80?}, {0xf298e0?, 0xc0001c88c0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001298c0, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:31:46 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:32:14 [PortalService] - http: Server closed
+
+[go] - 2024/06/05 17:32:21 [GradingService] - http: panic serving [::1]:8449: runtime error: invalid memory address or nil pointer dereference
+goroutine 47 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xe5aaa0?, 0x10d45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xf298e0, 0xc0001c89a0}, 0xea6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xf298e0, 0xc0001c89a0}, 0xc0004ba200)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x11354c0?, {0xf298e0, 0xc0001c89a0}, 0xc0004ba200)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0004a81b0?}, {0xf298e0?, 0xc0001c89a0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0002958c0, {0xf29da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:32:21 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:34:26 [GradingService] - http: panic serving [::1]:8523: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0x84aaa0?, 0xac45f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0x9198e0, 0xc0000ba000}, 0x896df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0x9198e0, 0xc0000ba000}, 0xc0000a8000)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0xb254c0?, {0x9198e0, 0xc0000ba000}, 0xc0000a8000)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000086210?}, {0x9198e0?, 0xc0000ba000?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000296000, {0x919da8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:34:26 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:35:04 [GradingService] - http: Server closed
+
+[go] - 2024/06/05 17:35:12 [GradingService] - http: panic serving [::1]:8555: runtime error: invalid memory address or nil pointer dereference
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xf8aaa0?, 0x12045f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0x1059920, 0xc0001c8000}, 0xfd6df8?)
+	E:/Go_Code/Distribute/grades/server.go:51 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0x1059920, 0xc0001c8000}, 0xc0001ba000)
+	E:/Go_Code/Distribute/grades/server.go:30 +0x126
+net/http.(*ServeMux).ServeHTTP(0x12654c0?, {0x1059920, 0xc0001c8000}, 0xc0001ba000)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0001900f0?}, {0x1059920?, 0xc0001c8000?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000218480, {0x1059de8, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:35:12 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:35:57 [GradingService] - http: Server closed
+
+[go] - 2024/06/05 17:36:29 [GradingService] - http: panic serving [::1]:8593: runtime error: invalid memory address or nil pointer dereference
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0x8abaa0?, 0xb255f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0x97a940, 0xc0000ba000}, 0xc0000b7aa0?)
+	E:/Go_Code/Distribute/grades/server.go:52 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0x97a940, 0xc0000ba000}, 0xc0000ae000)
+	E:/Go_Code/Distribute/grades/server.go:31 +0x1a5
+net/http.(*ServeMux).ServeHTTP(0xb864c0?, {0x97a940, 0xc0000ba000}, 0xc0000ae000)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000862d0?}, {0x97a940?, 0xc0000ba000?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000a6000, {0x97ae08, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:36:29 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:37:27 [GradingService] - http: Server closed
+
+[go] - 2024/06/05 17:37:34 [GradingService] - http: panic serving [::1]:8632: runtime error: invalid memory address or nil pointer dereference
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xcebaa0?, 0xf655f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xdba940, 0xc0001c6000}, 0xc000135aa0?)
+	E:/Go_Code/Distribute/grades/server.go:52 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xdba940, 0xc0001c6000}, 0xc0001c0000)
+	E:/Go_Code/Distribute/grades/server.go:31 +0x1a5
+net/http.(*ServeMux).ServeHTTP(0xfc64c0?, {0xdba940, 0xc0001c6000}, 0xc0001c0000)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000190150?}, {0xdba940?, 0xc0001c6000?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001287e0, {0xdbae08, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:37:34 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:38:15 [GradingService] - http: Server closed
+
+[go] - 2024/06/05 17:38:21 [GradingService] - http: panic serving [::1]:8669: runtime error: invalid memory address or nil pointer dereference
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0x47baa0?, 0x6f55f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0x54a940, 0xc000150000}, 0xc00014fab0?)
+	E:/Go_Code/Distribute/grades/server.go:53 +0x47
+Distribute/grades.studentsHandler.ServeHTTP({}, {0x54a940, 0xc000150000}, 0xc00012a200)
+	E:/Go_Code/Distribute/grades/server.go:32 +0x16b
+net/http.(*ServeMux).ServeHTTP(0x7564c0?, {0x54a940, 0xc000150000}, 0xc00012a200)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000023140?}, {0x54a940?, 0xc000150000?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001283f0, {0x54ae08, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:38:21 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:40:34 [GradingService] - http: panic serving [::1]:8743: runtime error: invalid memory address or nil pointer dereference
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0xdabaa0?, 0x10255f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0xe7a980, 0xc0001be000}, 0xc0001b5ab0?)
+	E:/Go_Code/Distribute/grades/server.go:53 +0x4a
+Distribute/grades.studentsHandler.ServeHTTP({}, {0xe7a980, 0xc0001be000}, 0xc0001ac000)
+	E:/Go_Code/Distribute/grades/server.go:32 +0x16b
+net/http.(*ServeMux).ServeHTTP(0x10864c0?, {0xe7a980, 0xc0001be000}, 0xc0001ac000)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000190060?}, {0xe7a980?, 0xc0001be000?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000aa480, {0xe7ae48, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:40:34 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:43:19 [GradingService] - http: panic serving [::1]:8913: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0x10abaa0?, 0x13255f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0x117a9a0, 0xc000146000}, 0xc000131ab0?)
+	E:/Go_Code/Distribute/grades/server.go:53 +0x4a
+Distribute/grades.studentsHandler.ServeHTTP({}, {0x117a9a0, 0xc000146000}, 0xc00012a200)
+	E:/Go_Code/Distribute/grades/server.go:32 +0x16b
+net/http.(*ServeMux).ServeHTTP(0x13864c0?, {0x117a9a0, 0xc000146000}, 0xc00012a200)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000230e0?}, {0x117a9a0?, 0xc000146000?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000a6000, {0x117ae68, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:43:19 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:43:22 [GradingService] - http: panic serving [::1]:8919: runtime error: invalid memory address or nil pointer dereference
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0x10abaa0?, 0x13255f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0x117a9a0, 0xc0001460e0}, 0xc000163ab0?)
+	E:/Go_Code/Distribute/grades/server.go:53 +0x4a
+Distribute/grades.studentsHandler.ServeHTTP({}, {0x117a9a0, 0xc0001460e0}, 0xc00012a600)
+	E:/Go_Code/Distribute/grades/server.go:32 +0x16b
+net/http.(*ServeMux).ServeHTTP(0x13864c0?, {0x117a9a0, 0xc0001460e0}, 0xc00012a600)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000023470?}, {0x117a9a0?, 0xc0001460e0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001c2480, {0x117ae68, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:43:22 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:43:22 [GradingService] - http: panic serving [::1]:8920: runtime error: invalid memory address or nil pointer dereference
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0x10abaa0?, 0x13255f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0x117a9a0, 0xc0001461c0}, 0xc000207ab0?)
+	E:/Go_Code/Distribute/grades/server.go:53 +0x4a
+Distribute/grades.studentsHandler.ServeHTTP({}, {0x117a9a0, 0xc0001461c0}, 0xc00012a900)
+	E:/Go_Code/Distribute/grades/server.go:32 +0x16b
+net/http.(*ServeMux).ServeHTTP(0x13864c0?, {0x117a9a0, 0xc0001461c0}, 0xc00012a900)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000236b0?}, {0x117a9a0?, 0xc0001461c0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000a61b0, {0x117ae68, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:43:22 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:43:28 [PortalService] - http: Server closed
+
+[go] - 2024/06/05 17:43:39 [GradingService] - http: panic serving [::1]:8937: runtime error: invalid memory address or nil pointer dereference
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0x10abaa0?, 0x13255f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0x117a9a0, 0xc0001462a0}, 0xc000131ab0?)
+	E:/Go_Code/Distribute/grades/server.go:53 +0x4a
+Distribute/grades.studentsHandler.ServeHTTP({}, {0x117a9a0, 0xc0001462a0}, 0xc00012ac00)
+	E:/Go_Code/Distribute/grades/server.go:32 +0x16b
+net/http.(*ServeMux).ServeHTTP(0x13864c0?, {0x117a9a0, 0xc0001462a0}, 0xc00012ac00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0000238c0?}, {0x117a9a0?, 0xc0001462a0?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001c25a0, {0x117ae68, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:43:39 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:43:47 [GradingService] - http: panic serving [::1]:8943: runtime error: invalid memory address or nil pointer dereference
+goroutine 54 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0x10abaa0?, 0x13255f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0x117a9a0, 0xc000146380}, 0xc000131ab0?)
+	E:/Go_Code/Distribute/grades/server.go:53 +0x4a
+Distribute/grades.studentsHandler.ServeHTTP({}, {0x117a9a0, 0xc000146380}, 0xc00012af00)
+	E:/Go_Code/Distribute/grades/server.go:32 +0x16b
+net/http.(*ServeMux).ServeHTTP(0x13864c0?, {0x117a9a0, 0xc000146380}, 0xc00012af00)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000023b30?}, {0x117a9a0?, 0xc000146380?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000128bd0, {0x117ae68, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:43:47 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/05 17:47:52 [GradingService] - http: panic serving [::1]:9093: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	D:/go1.21.1/src/net/http/server.go:1868 +0xb9
+panic({0x7ebaa0?, 0xa655f0?})
+	D:/go1.21.1/src/runtime/panic.go:920 +0x270
+sync.(*Mutex).Lock(...)
+	D:/go1.21.1/src/sync/mutex.go:83
+Distribute/grades.studentsHandler.getAll({}, {0x8ba9c0, 0xc0001be000}, 0xc0001b5ab0?)
+	E:/Go_Code/Distribute/grades/server.go:53 +0x4b
+Distribute/grades.studentsHandler.ServeHTTP({}, {0x8ba9c0, 0xc0001be000}, 0xc0001ac000)
+	E:/Go_Code/Distribute/grades/server.go:32 +0x16b
+net/http.(*ServeMux).ServeHTTP(0xac64c0?, {0x8ba9c0, 0xc0001be000}, 0xc0001ac000)
+	D:/go1.21.1/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000190060?}, {0x8ba9c0?, 0xc0001be000?}, 0x6?)
+	D:/go1.21.1/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000ac360, {0x8bae88, 0xc000086180})
+	D:/go1.21.1/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 6
+	D:/go1.21.1/src/net/http/server.go:3086 +0x5cb
+
+[go] - 2024/06/05 17:47:52 [PortalService] - Error retrieving students:  Get "http://localhost:6000/students": EOF
+
+[go] - 2024/06/06 20:51:01 [PortalService] - Failed to parse score:  strconv.ParseFloat: parsing "": invalid syntax
+
+[go] - 2024/06/06 20:56:06 [PortalService] - Failed to parse score:  strconv.ParseFloat: parsing "": invalid syntax
+
+[go] - 2024/06/06 20:56:07 [PortalService] - Failed to parse score:  strconv.ParseFloat: parsing "": invalid syntax
+
+[go] - 2024/06/06 20:56:07 [PortalService] - Failed to parse score:  strconv.ParseFloat: parsing "": invalid syntax
+
