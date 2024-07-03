@@ -1,0 +1,59 @@
+services:
+  #启动的容器服务，可以一次启动多个容器
+  register_service:
+    image: register_service
+    build: ./register_service/.
+    restart: always
+    networks:
+      - mynet
+    environment:
+      APP_ENV: dev
+    # 暴露指定端口，随即映射主机端口，方便进行弹性伸缩
+    # ports:
+    #   - 80
+  
+  log_service:
+    image: log_service
+    build: ./log_service/.
+    restart: always
+    networks:
+      - mynet
+    volumes:
+      - /home/jlzhao/Distribute/log_service/log_file/distribute.log:/distribute.log
+    environment:
+      APP_ENV: dev
+#指定当前服务所依赖的服务，所依赖的服务启动完成，该服务才会启动
+    depends_on:
+      - register_service
+  
+  grading_service:
+    image: grading_service
+    build: ./grading_service/.
+    restart: always
+    networks:
+     - mynet
+    environment:
+      APP_ENV: dev
+    depends_on:
+      - register_service
+  
+  portal_service:
+    image: portal_service
+    build: ./portal_service/.
+    restart: always
+    networks:
+     - mynet
+    environment:
+      APP_ENV: dev
+    depends_on:
+      - register_service
+      - grading_service
+
+
+networks:
+  mynet:
+    driver: bridge
+    ipam:
+     config:
+      - subnet: 182.168.0.0/16
+        gateway: 182.168.0.1
