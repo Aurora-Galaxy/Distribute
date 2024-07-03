@@ -1,0 +1,1 @@
+Distribute_Docker 将原本的简单分布式系统进行拆分，每个service都包含Dockerfile,使用docker-compose构建镜像，并运行为容器
