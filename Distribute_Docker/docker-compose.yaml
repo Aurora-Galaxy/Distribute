@@ -18,8 +18,8 @@ services:
     restart: always
     networks:
       - mynet
-    volumes:
-      - /home/jlzhao/Distribute/log_service/log_file/distribute.log:/distribute.log
+    # volumes:
+    #   - /home/jlzhao/Distribute/log_service/log_file:/distribute
     environment:
       APP_ENV: dev
 #指定当前服务所依赖的服务，所依赖的服务启动完成，该服务才会启动
